@@ -3,6 +3,7 @@ import SignUp from './components/forms/signUp';
 import { Route, Routes } from 'react-router-dom';
 import AppLayout from './components/layouts/AppLayout';
 import Dashboard from './components/layouts/Dashboard';
+import CardDetails from './components/layouts/CardDetails';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
               <SignUp />
             </AppLayout>
           } />
+        <Route path="/livre/:index" element={<CardDetails/>} />
       </Routes>
       
     </div>

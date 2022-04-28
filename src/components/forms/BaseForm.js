@@ -24,7 +24,6 @@ function BaseForm() {
             await register(formValues);
             resetForm();
             alert("L'inscription a été bien prise en compte");
-            console.log(formValues);
         } catch ({errors}) {
             for (let key in errors) {
                 setFieldError(key, errors[key]);
